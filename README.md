@@ -30,9 +30,9 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ## 📊 GitHub Stats
 
-![Klastic's GitHub stats](https://github-readme-stats.vercel.app/api?username=Klastic&show_icons=true&theme=dark&hide_border=true)
+![Klastic's GitHub stats](https://github-readme-stats.vercel.app/api?username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Klastic&layout=compact&theme=dark&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true)
 
 ## 👯 Looking to Collaborate On
 
