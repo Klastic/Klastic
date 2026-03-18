@@ -1,4 +1,4 @@
-name: GitHub Metrics
+name: Update GitHub Stats Cards
 
 on:
   schedule:
@@ -10,38 +10,37 @@ on:
       - main
 
 jobs:
-  metrics:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      # Generate overall GitHub stats (includes private contributions)
-      # Requires a PAT named METRICS_TOKEN with scopes: read:user, repo
-      - name: Generate GitHub stats
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Klastic
-          base: header, activity, community, repositories, metadata
-          base_indepth: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          config_timezone: UTC
-          filename: github-stats.svg
+      - uses: actions/checkout@v4
 
-      # Generate top languages (includes private repos)
-      - name: Generate top languages
-        uses: lowlighter/metrics@v3.34
+      # Generate GitHub stats card (includes private contributions via PAT)
+      # Requires a PAT named METRICS_TOKEN with scopes: repo, read:user
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
+          card: stats
+          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true
+          path: github-stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Klastic
-          base: ""
-          plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          repositories_affiliations: owner, collaborator, organization_member
-          config_timezone: UTC
-          filename: github-languages.svg
+
+      # Generate top languages card (includes private repos via PAT)
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true
+          path: github-languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add github-stats.svg github-languages.svg
+          git commit -m "chore: update GitHub stats cards" || exit 0
+          git pull --rebase
+          git push
