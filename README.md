@@ -5,13 +5,13 @@ I'm a passionate developer who loves building things and learning new technologi
 ## 🔭 What I'm Working On
 
 - Building a set of packages for [Streamer.bot](https://streamer.bot) to extend streaming automation
-- Working on [LostKode](https://github.com/LostKode) — an open-source GitHub org with tools and projects
+- Working with [LostKode](https://github.com/LostKode) — an app/web dev company with the odd side project here and there
 - Exploring new open-source projects and contributing to the developer community
 
 ## 🌱 Currently Learning
 
 - **AI Agents** and agentic workflow design
-- **Large-scale orchestration** systems (including work in the [Industrial Parasite](https://github.com/Klastic) and LostKode repos)
+- **Large-scale orchestration** systems (including work in the [Industrial Parasite](https://github.com/Industrial-Parasite) and LostKode repos)
 - Cloud architecture and DevOps practices
 - Modern frontend and backend frameworks
 - System design and scalable architectures
