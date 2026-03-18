@@ -11,7 +11,7 @@ I'm a passionate developer who loves building things and learning new technologi
 ## 🌱 Currently Learning
 
 - **AI Agents** and agentic workflow design
-- **Large-scale orchestration** systems (including work in the [Industrial Parasite](https://github.com/Industrial-Parasite) and LostKode repos)
+- **Large-scale orchestration** systems (including work in the [Industrial Parasite](https://github.com/Industrial-Parasite) and [LostKode](https://github.com/LostKode) repos)
 - Cloud architecture and DevOps practices
 - Modern frontend and backend frameworks
 - System design and scalable architectures
