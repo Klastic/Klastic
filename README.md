@@ -30,7 +30,7 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](github-stats.svg) ![Top Languages](github-languages.svg)
+<img src="github-stats.svg" alt="GitHub Stats" /><br><img src="github-languages.svg" alt="Top Languages" height="195" />
 
 ## 👯 Looking to Collaborate On
 
