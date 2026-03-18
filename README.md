@@ -4,12 +4,14 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ## 🔭 What I'm Working On
 
-- Exploring new open-source projects
-- Building tools and applications that solve real problems
-- Contributing to the developer community
+- Building a set of packages for [Streamer.bot](https://streamer.bot) to extend streaming automation
+- Working on [LostKode](https://github.com/LostKode) — an open-source GitHub org with tools and projects
+- Exploring new open-source projects and contributing to the developer community
 
 ## 🌱 Currently Learning
 
+- **AI Agents** and agentic workflow design
+- **Large-scale orchestration** systems (including work in the [Industrial Parasite](https://github.com/Klastic) and LostKode repos)
 - Cloud architecture and DevOps practices
 - Modern frontend and backend frameworks
 - System design and scalable architectures
@@ -19,6 +21,7 @@ I'm a passionate developer who loves building things and learning new technologi
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=csharp&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
@@ -33,6 +36,7 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ## 👯 Looking to Collaborate On
 
+- Streaming tools and Streamer.bot integrations
 - Interesting open-source projects
 - Tools that improve developer productivity
 - Anything creative and challenging!
@@ -43,4 +47,4 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ---
 
-⚡ *"The best way to predict the future is to invent it."*
+⚡ *"The best way to predict the future is to invent it."* — Alan Kay
