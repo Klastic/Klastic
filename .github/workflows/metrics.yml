@@ -19,13 +19,13 @@ jobs:
 
       # Generate GitHub stats card (includes private and org contributions via PAT)
       # Requires a PAT named METRICS_TOKEN with scopes: repo, read:user, read:org
-      # read:org is required for include_all_commits=true to count commits in
-      # organization repositories (e.g. LostKode, Industrial-Parasite).
+      # include_orgs lists the orgs whose contributions should be counted
+      # (e.g. LostKode, Industrial-Parasite).
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true
+          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true&include_orgs=LostKode,Industrial-Parasite
           path: github-stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
@@ -34,7 +34,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true
+          options: username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true&include_orgs=LostKode,Industrial-Parasite
           path: github-languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
