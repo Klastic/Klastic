@@ -17,29 +17,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Generate GitHub stats card
-      # Uses lowlighter/metrics which runs with the PAT directly in GitHub Actions,
-      # so it reads from the full GitHub contribution graph (including org repos).
+      # Generate GitHub stats card (includes private contributions via PAT)
       # Requires a PAT named METRICS_TOKEN with scopes: repo, read:user
       - name: Generate stats card
-        uses: lowlighter/metrics@v3.34
+        uses: readme-tools/github-readme-stats-action@v1
         with:
+          card: stats
+          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true
+          path: github-stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Klastic
-          base: activity, community, repositories, metadata
-          base_indepth: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          filename: github-stats.svg
 
-      # Generate top languages card (includes all repos and orgs via PAT)
+      # Generate top languages card (includes private repos via PAT)
       - name: Generate top languages card
-        uses: lowlighter/metrics@v3.34
+        uses: readme-tools/github-readme-stats-action@v1
         with:
+          card: top-langs
+          options: username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true
+          path: github-languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Klastic
-          base: ""
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          filename: github-languages.svg
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add github-stats.svg github-languages.svg
+          git commit -m "chore: update GitHub stats cards" || exit 0
+          git pull --rebase
+          git push
