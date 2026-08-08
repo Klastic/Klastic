@@ -17,24 +17,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Generate GitHub stats card (includes private and org contributions via PAT)
-      # Requires a PAT named METRICS_TOKEN with scopes: repo, read:user, read:org
-      # include_orgs lists the orgs whose contributions should be counted
-      # (e.g. LostKode, Industrial-Parasite).
+      - name: Find accessible repository owners
+        id: owners
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          organizations="$(gh api --paginate user/memberships/orgs --jq '.[].organization.login' | paste -sd, -)"
+          echo "value=Klastic${organizations:+,$organizations}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate lifetime contribution card
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_LOGIN: Klastic
+        run: node .github/scripts/generate-lifetime-contributions.mjs
+
+      # Requires METRICS_TOKEN with repo, read:user, and read:org scopes.
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true&include_orgs=LostKode,Industrial-Parasite
+          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&owner=${{ steps.owners.outputs.value }}&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR
           path: github-stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
       # Generate top languages card (includes private and org repos via PAT)
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=Klastic&layout=compact&theme=dark&hide_border=true&count_private=true&include_orgs=LostKode,Industrial-Parasite
+          options: username=Klastic&layout=compact&theme=dark&hide_border=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR
           path: github-languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
@@ -42,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add github-stats.svg github-languages.svg
+          git add github-stats.svg github-languages.svg github-lifetime.svg
           git commit -m "chore: update GitHub stats cards" || exit 0
           git pull --rebase
           git push

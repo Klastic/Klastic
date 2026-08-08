@@ -1,0 +1,21 @@
+<svg width="540" height="188" viewBox="0 0 540 188" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Klastic lifetime GitHub activity</title>
+  <desc id="description">7,267 lifetime contributions, 6,983 anonymized private contributions, and 2,314 verified commits.</desc>
+  <style>
+    .title { fill: #f0f6fc; font: 600 18px "Segoe UI", Ubuntu, sans-serif; }
+    .label { fill: #8b949e; font: 400 13px "Segoe UI", Ubuntu, sans-serif; }
+    .value { fill: #f0f6fc; font: 700 24px "Segoe UI", Ubuntu, sans-serif; }
+    .note { fill: #8b949e; font: 400 12px "Segoe UI", Ubuntu, sans-serif; }
+  </style>
+  <rect x="0.5" y="0.5" width="539" height="187" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <text x="24" y="34" class="title">Lifetime GitHub activity</text>
+  <text x="24" y="67" class="label">All contributions since 2015</text>
+  <text x="24" y="96" class="value">7,267</text>
+  <text x="206" y="67" class="label">Private contributions</text>
+  <text x="206" y="96" class="value">6,983</text>
+  <text x="374" y="67" class="label">Verified commits</text>
+  <text x="374" y="96" class="value">2,314</text>
+  <line x1="24" y1="120" x2="516" y2="120" stroke="#21262d"/>
+  <text x="24" y="145" class="note">6,983 anonymized private contributions included</text>
+  <text x="24" y="166" class="note">Verified commits cover accessible personal and organization repositories</text>
+</svg>
