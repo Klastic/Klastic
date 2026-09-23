@@ -36,7 +36,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&owner=${{ steps.owners.outputs.value }}&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR
+          options: username=Klastic&show_icons=true&theme=dark&hide_border=true&hide_rank=true&include_all_commits=true&owner=${{ steps.owners.outputs.value }}&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR
           path: github-stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
