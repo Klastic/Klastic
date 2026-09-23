@@ -32,6 +32,8 @@ I'm a passionate developer who loves building things and learning new technologi
 
 ![Lifetime GitHub Activity](github-lifetime.svg)
 
+![GitHub Contribution History](github-history.svg)
+
 ![Top Languages](github-languages.svg)
 
 ## 👯 Looking to Collaborate On
