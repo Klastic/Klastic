@@ -57,7 +57,7 @@
   <rect x="460" y="344" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="357" text-anchor="end" class="count">2,697</text>
   <text x="24" y="384" class="year">2026</text>
-  <rect x="70" y="371" width="225" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="295" y="371" width="0" height="17" rx="3" fill="#bc8cff"/>
-  <text x="516" y="384" text-anchor="end" class="count">1,559</text>
+  <rect x="70" y="371" width="226" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="296" y="371" width="0" height="17" rx="3" fill="#bc8cff"/>
+  <text x="516" y="384" text-anchor="end" class="count">1,564</text>
 </svg>
