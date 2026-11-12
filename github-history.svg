@@ -30,7 +30,7 @@
   <text x="516" y="168" text-anchor="end" class="count">656</text>
   <text x="24" y="195" class="year">2019</text>
   <rect x="70" y="182" width="1" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="71" y="182" width="45" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="71" y="182" width="44" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="195" text-anchor="end" class="count">340</text>
   <text x="24" y="222" class="year">2020</text>
   <rect x="70" y="209" width="37" height="17" rx="3" fill="#58a6ff"/>
@@ -53,11 +53,11 @@
   <rect x="131" y="317" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="330" text-anchor="end" class="count">454</text>
   <text x="24" y="357" class="year">2025</text>
-  <rect x="70" y="344" width="364" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="434" y="344" width="0" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="70" y="344" width="363" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="433" y="344" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="357" text-anchor="end" class="count">2,697</text>
   <text x="24" y="384" class="year">2026</text>
   <rect x="70" y="371" width="390" height="17" rx="3" fill="#58a6ff"/>
   <rect x="460" y="371" width="0" height="17" rx="3" fill="#bc8cff"/>
-  <text x="516" y="384" text-anchor="end" class="count">2,889</text>
+  <text x="516" y="384" text-anchor="end" class="count">2,897</text>
 </svg>
