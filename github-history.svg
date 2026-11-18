@@ -21,8 +21,8 @@
   <rect x="79" y="101" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="114" text-anchor="end" class="count">76</text>
   <text x="24" y="141" class="year">2017</text>
-  <rect x="70" y="128" width="26" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="96" y="128" width="66" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="70" y="128" width="25" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="95" y="128" width="66" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="141" text-anchor="end" class="count">760</text>
   <text x="24" y="168" class="year">2018</text>
   <rect x="70" y="155" width="40" height="17" rx="3" fill="#58a6ff"/>
@@ -37,27 +37,27 @@
   <rect x="103" y="209" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="222" text-anchor="end" class="count">276</text>
   <text x="24" y="249" class="year">2021</text>
-  <rect x="70" y="236" width="22" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="92" y="236" width="17" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="70" y="236" width="21" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="91" y="236" width="17" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="249" text-anchor="end" class="count">320</text>
   <text x="24" y="276" class="year">2022</text>
   <rect x="70" y="263" width="2" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="72" y="263" width="142" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="72" y="263" width="141" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="276" text-anchor="end" class="count">1,191</text>
   <text x="24" y="303" class="year">2023</text>
   <rect x="70" y="290" width="16" height="17" rx="3" fill="#58a6ff"/>
   <rect x="86" y="290" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="303" text-anchor="end" class="count">132</text>
   <text x="24" y="330" class="year">2024</text>
-  <rect x="70" y="317" width="55" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="125" y="317" width="0" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="70" y="317" width="54" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="124" y="317" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="330" text-anchor="end" class="count">454</text>
   <text x="24" y="357" class="year">2025</text>
-  <rect x="70" y="344" width="327" height="17" rx="3" fill="#58a6ff"/>
-  <rect x="397" y="344" width="0" height="17" rx="3" fill="#bc8cff"/>
+  <rect x="70" y="344" width="323" height="17" rx="3" fill="#58a6ff"/>
+  <rect x="393" y="344" width="0" height="17" rx="3" fill="#bc8cff"/>
   <text x="516" y="357" text-anchor="end" class="count">2,697</text>
   <text x="24" y="384" class="year">2026</text>
   <rect x="70" y="371" width="390" height="17" rx="3" fill="#58a6ff"/>
   <rect x="460" y="371" width="0" height="17" rx="3" fill="#bc8cff"/>
-  <text x="516" y="384" text-anchor="end" class="count">3,215</text>
+  <text x="516" y="384" text-anchor="end" class="count">3,252</text>
 </svg>
